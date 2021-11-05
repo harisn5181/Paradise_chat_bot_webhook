@@ -1,5 +1,7 @@
 
 import os
+
+PORT = int(os.environ.get('PORT', 5000))
 import telebot
 from telebot import types
 
@@ -322,4 +324,8 @@ def echo(call):
 if __name__ == '__main__':
     recovery_data()
     bot.stop_polling()
-    bot.polling(none_stop=True)
+    updater.start_webhook(listen="0.0.0.0",
+                          port=int(PORT),
+                          url_path=TOKEN)
+    updater.bot.setWebhook('https://yourherokuappname.herokuapp.com/' + TOKEN)
+  
