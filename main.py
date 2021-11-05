@@ -9,9 +9,9 @@ from Messages import *
 from dataEgine import *
 
 
-
-API_KEY = os.environ['API_KEY']
-bot = telebot.TeleBot(API_KEY)
+TOKEN='1908250775:AAFoQFc2_qQbl8VhVxwm9m88nsSwOQVNHyI'
+#API_KEY = os.environ['API_KEY']
+bot = telebot.TeleBot(TOKEN)
 
 
 def inline_menu():
