@@ -9,7 +9,7 @@ from dataEgine import *
 
 
 API_KEY = 1908250775:AAFoQFc2_qQbl8VhVxwm9m88nsSwOQVNHyI
-bot = telebot.TeleBot(API_KEY)
+bot = telebot.TeleBot(token=API_KEY)
 
 
 def inline_menu():
