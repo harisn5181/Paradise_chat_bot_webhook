@@ -1,7 +1,5 @@
 
 import os
-
-PORT = int(os.environ.get('PORT', 5000))
 import telebot
 from telebot import types
 
@@ -9,9 +7,9 @@ from Messages import *
 from dataEgine import *
 
 
-TOKEN='1908250775:AAFoQFc2_qQbl8VhVxwm9m88nsSwOQVNHyI'
-#API_KEY = os.environ['API_KEY']
-bot = telebot.TeleBot(TOKEN)
+
+API_KEY = 1908250775:AAFoQFc2_qQbl8VhVxwm9m88nsSwOQVNHyI
+bot = telebot.TeleBot(API_KEY)
 
 
 def inline_menu():
@@ -324,8 +322,4 @@ def echo(call):
 if __name__ == '__main__':
     recovery_data()
     bot.stop_polling()
-    updater.start_webhook(listen="0.0.0.0",
-                          port=int(PORT),
-                          url_path=TOKEN)
-    updater.bot.setWebhook('https://yourherokuappname.herokuapp.com/' + TOKEN)
-  
+    bot.polling(none_stop=True)
