@@ -13,23 +13,6 @@ API_KEY ='1908250775:AAFoQFc2_qQbl8VhVxwm9m88nsSwOQVNHyI'
 
 
 
-"env": {
-        "ENV": {
-            "description": "Fill this if you using environ variable as config.",
-            "value": "True"
-        },
-        "BOT_TOKEN": {
-            "description": "Get Bot API Token from @BotFather",
-            "value": ""
-        },
-        "PROJECT_NAME": {
-            "description": "Project of what you desire",
-            "value": ""
-        },
-        "APP_URL": {
-            "description": "Heroku app url, example: https://appname.herokuapp.com",
-            "value": ""
-        }
 
 
 bot = telebot.TeleBot(token=API_KEY)
