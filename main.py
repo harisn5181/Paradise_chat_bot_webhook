@@ -11,7 +11,7 @@ from Messages import *
 from dataEgine import *
 
 
-
+BOT_TOKEN='1908250775:AAFoQFc2_qQbl8VhVxwm9m88nsSwOQVNHyI'
 ENV = bool(environ.get('ENV', False))
 
 if ENV:
