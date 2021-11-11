@@ -1,4 +1,4 @@
-python ==3.9
+python ==3.9.8
 pyTelegramBotAPI == 4.1.1
 SQLAlchemy ==1.4.26
 telegram ==0.0.1
